@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="header-top">
+        <div class="container">
+
+          <div class="row">
+            <div class="col col-auto">
+              <div class="logo-wrapper">
+                <img src="img/logo.png" width="47" height="78" alt="#">
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="descriptor">
+                <p>Администрация города Кирова</p>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="weather-wrapper">
+                <p class="weathet-title">Погода в Кирове</p>
+                <p class="weather-data">
+                  <img src="img/weather.png" alt="#" width="18" height="18">
+                  <p class="weather-info-item">2°</p>
+                  <p class="weather-info-item">влажность 95%</p>
+                </p>
+              </div>
+            </div>
+
+            <div class="col-auto">
+              <div class="poor-vision-wrapper">
+                <a href="#">
+                  <img src="img/poor-vision-icon.png" alt="#">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-auto">
+              <div class="social-wrapper">
+                <nav class="social-links">
+                  <a target="_blank" href="https://ru-ru.facebook.com/%D0%9F%D1%80%D0%B5%D1%81%D1%81-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D0%B0-%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0-%D0%9A%D0%B8%D1%80%D0%BE%D0%B2%D0%B0-1844297635784984/">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z"/></svg>
+                  </a>
+                  <a target="_blank" href="https://vk.com/public139196350">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"/></svg>
+                  </a>
+                </nav>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="search-wrapper">
+                <div class="search">
+                  <form action="#">
+                    <input id="q" type="text" class="search-input">
+                    <label class="search-input-label" for="q">Поиск</label>
+                    <button type="submit"></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#js-menu" class="h-adaptive-menu-icon"></a>
+      </div>
+
+      <div class="header-bottom">
+        <nav class="menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <ul class="menu-list">
+
+                  <li>
+                    <a href="#" class="active-menu">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M488 312.7V456c0 13.3-10.7 24-24 24H348c-6.6 0-12-5.4-12-12V356c0-6.6-5.4-12-12-12h-72c-6.6 0-12 5.4-12 12v112c0 6.6-5.4 12-12 12H112c-13.3 0-24-10.7-24-24V312.7c0-3.6 1.6-7 4.4-9.3l188-154.8c4.4-3.6 10.8-3.6 15.3 0l188 154.8c2.7 2.3 4.3 5.7 4.3 9.3zm83.6-60.9L488 182.9V44.4c0-6.6-5.4-12-12-12h-56c-6.6 0-12 5.4-12 12V117l-89.5-73.7c-17.7-14.6-43.3-14.6-61 0L4.4 251.8c-5.1 4.2-5.8 11.8-1.6 16.9l25.5 31c4.2 5.1 11.8 5.8 16.9 1.6l235.2-193.7c4.4-3.6 10.8-3.6 15.3 0l235.2 193.7c5.1 4.2 12.7 3.5 16.9-1.6l25.5-31c4.2-5.2 3.4-12.7-1.7-16.9z"/></svg>
+                    </a>
+                  </li>
+
+
+                  <li>
+                    <a href="#" class="">Об администрации</a>
+
+                    <ul>
+                      <li>
+                        <a href="#">Об администрации</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Полномочия администрации</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Структура администрации</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Комиссии, коллегии</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Подведомственные организации</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Официальные визиты и международное сотрудничество</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Муниципальная служба</a>
+                      </li>
+                    </ul>
+
+                  </li>
+
+
+                  <li>
+                    <a href="#" class="">Документы</a>
+
+                    <ul>
+
+                      <li>
+                        <a href="#">Распоряжения администрации города</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Постановления администрации города</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Приказы</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Проекты муниципальных правовых актов</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Финансовая политика города</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Экономика и статистика</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Участие в программах</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Перечни информационных систем, банков данных, реестров, регистров</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Признание муниципальных правовых актов недействующими</a>
+                      </li>
+
+
+                      <li>
+                        <a href="#">Муниципальный контроль</a>
+                      </li>
+                    </ul>
+
+                  </li>
+
+                  <li>
+                    <a href="#">Районы города</a>
+
+                    <ul>
+                      <li>
+                        <a href="#">Ленинский</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Октябрьский</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Нововятский</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Первомайский</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a href="#">Муниципальные услуги</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Прием граждан</a>
+                  </li>
+
+
+                  <li class="">
+                    <a href="#">Пресс-центр</a>
+
+                    <ul>
+                      <li>
+                        <a href="#">Новости</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Фоторепортажи</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Конкурсы СМИ</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Учрежденные СМИ</a>
+                      </li>
+
+
+                      <li>
+                        <a href="#">Прямая линия главы города</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="header-tag">
+        <div class="container">
+          <div class="row  justify-content-center">
+            <div class="col-12">
+              <a href="#">
+                <p>#Кировменяется</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="section-today-news">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="today-news-wrapper">
+                <a href="#" class="today-news-item">
+                  <img src="img/65e576492d6b9deba3ccf98c6f9ced41.jpg">
+                  <div class="cont">
+                    <time class="date" datetime="30.03.2018">30.03.2018</time>
+                    <h2 class="name">В Кирове начнут создавать новую «архитектурную историю»</h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-sites">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-6">
+              <div class="sites-list-item">
+                <h3 class="sites-title">Сайты отраслевых органов<br>и учреждений</h3>
+
+                <ul class="sites-list">
+                  <li>
+                    <a href="http://www.reklama.admkirov.ru/" title="Городская реклама">
+                      <span class="icon">
+                        <img src="img/gr.png" alt="#">
+                      </span>
+                      <span class="name">Городская реклама</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://www.culture.admkirov.ru/" title="Управление культуры">
+                      <span class="icon">
+                        <img src="img/uk.png" alt="#">
+                      </span>
+                      <span class="name">Управление культуры</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://www.finance.admkirov.ru/process/" title="Департамент финансов">
+                      <span class="icon">
+                        <img src="img/df.png" alt="#">
+                      </span>
+                      <span class="name">Департамент финансов</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://mb.admkirov.ru/" title="Управление предпринимательством">
+                      <span class="icon">
+                        <img src="img/up.png" alt="#">
+                      </span>
+                      <span class="name">Управление предпринимательством</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://www.youthcity.ru/" title="Управление по делам молодежи, физической культуры и спорту">
+                      <span class="icon">
+                        <img src="img/fiz.png" alt="#">
+                      </span>
+                      <span class="name">Управление по делам молодежи, физической культуры и спорту</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://www.arhiv.admkirov.ru/content/articles/1" title="МКУ «Архив муниципального образования «Город Киров»">
+                      <span class="icon">
+                        <img src="img/ar.png" alt="#">
+                      </span>
+                      <span class="name">МКУ «Архив муниципального образования «Город Киров»</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://www.mo-kirov.ru/gazeta/" title="Наш Город - газета муниципального образования " Город="" Киров""="">
+                      <span class="icon">
+                        <img src="img/gov.png" alt="#">
+                      </span>
+                      <span class="name">Наш Город - газета муниципального образования "Город Киров"</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="sites-list-item">
+                <h3 class="sites-title">Сайты органов власти</h3>
+
+                <ul class="sites-list">
+                  <li>
+                    <a href="http://www.mo-kirov.ru/" title="Портал МО " Город="" Киров""="">
+                      <span class="icon">
+                        <img src="img/gov.png" alt="#">
+                      </span>
+                      <span class="name">Портал МО "Город Киров"</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://www.duma.mo-kirov.ru/" title="Кировская городская Дума">
+                      <span class="icon">
+                        <img src="img/gov.png" alt="#">
+                      </span>
+                      <span class="name">Кировская городская Дума</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://www.ksp.mo-kirov.ru/" title="Контрольно-счетная палата">
+                      <span class="icon">
+                        <img src="img/gov.png" alt="#">
+                      </span>
+                      <span class="name">Контрольно-счетная палата</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://www.admkirov.ru/" title="Администрация г. Кирова">
+                      <span class="icon">
+                        <img src="img/gov.png" alt="#">
+                      </span>
+                      <span class="name">Администрация г. Кирова</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://www.izbirkom.mo-kirov.ru/" title="Избирательная комиссиия">
+                      <span class="icon">
+                        <img src="img/gov.png" alt="#">
+                      </span>
+                      <span class="name">Избирательная комиссиия</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-3">
+              <div class="nav-column">
+                <h4 class="nav-title">
+                  <a href="#">Администрация</a>
+                </h4>
+                <ul class="nav-list">
+                  <li>
+                    <a href="#">Об администрации</a>
+                  </li>
+                  <li>
+                    <a href="#">Структура(руководители, отраслевые органы)</a>
+                  </li>
+                  <li>
+                    <a href="#">Комиссии, коллегии</a>
+                  </li>
+                  <li>
+                    <a href="#">Полномочия, задачи и функции</a>
+                  </li>
+                  <li>
+                    <a href="#">Подведомственные организации</a>
+                  </li>
+                  <li>
+                    <a href="#">Официальные визиты и международное сотрудничество</a>
+                  </li>
+                  <li>
+                    <a href="#">Вакансии</a>
+                  </li>
+                  <li>
+                    <a href="#">Противодействие коррупции</a>
+                  </li>
+                </ul>
+
+                <h4 class="nav-title">
+                  <a href="#">Важные ссылки</a>
+                </h4>
+                <ul class="nav-list">
+                  <li>
+                    <a href="#">Открытые данные</a>
+                  </li>
+                  <li>
+                    <a href="#">Капитальный ремонт</a>
+                  </li>
+                  <li>
+                    <a href="#">Бюджет</a>
+                  </li>
+                  <li>
+                    <a href="#">Инвестиционная деятельность</a>
+                  </li>
+                  <li>
+                    <a href="#">Диспетчер онлайн</a>
+                  </li>
+                  <li>
+                    <a href="#">Общественное самоуправление</a>
+                  </li>
+                  <li>
+                    <a href="#">В помощь бизнесу</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="nav-column">
+                <h4 class="nav-title">
+                  <a href="#">Документы</a>
+                </h4>
+                <ul class="nav-list">
+                  <li>
+                    <a href="#">Постановления администрации города Кирова</a>
+                  </li>
+                  <li>
+                    <a href="#">Распоряжения администрации города Кирова</a>
+                  </li>
+                  <li>
+                    <a href="#">Проекты муниципальных правовых актов</a>
+                  </li>
+                  <li>
+                    <a href="#">Статистическая информация</a>
+                  </li>
+                  <li>
+                    <a href="#">Участие в программах</a>
+                  </li>
+                  <li>
+                    <a href="#">Информационные системы</a>
+                  </li>
+                  <li>
+                    <a href="#">Результаты проверок</a>
+                  </li>
+                </ul>
+
+                <h4 class="nav-title">
+                  <a href="#">Районы города</a>
+                </h4>
+                <ul class="nav-list">
+                  <li>
+                    <a href="#">Ленинский</a>
+                  </li>
+                  <li>
+                    <a href="#">Первомайский</a>
+                  </li>
+                  <li>
+                    <a href="#">Октябрьский</a>
+                  </li>
+                  <li>
+                    <a href="#">Нововятский</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="nav-column">
+                <h4 class="nav-title">
+                  <a href="#">Муниципальные услуги</a>
+                </h4>
+                <ul class="nav-list">
+                  <li>
+                    <a href="#">Для граждан</a>
+                  </li>
+                  <li>
+                    <a href="#">Для бизнеса</a>
+                  </li>
+                  <li>
+                    <a href="#">Для власти</a>
+                  </li>
+                  <li>
+                    <a href="#">Регламенты муниципальных услуг</a>
+                  </li>
+                </ul>
+                <h4 class="nav-title">
+                  <a href="#">Муниципальная собственность</a>
+                </h4>
+                <h4 class="nav-title">
+                  <a href="#">Градостроительная деятельность</a>
+                </h4>
+                <h4 class="nav-title">
+                  <a href="#">Муниципальные закупки</a>
+                </h4>
+                <h4 class="nav-title">
+                  <a href="#">Прием граждан</a>
+                </h4>
+                <ul class="nav-list">
+                  <li>
+                    <a href="#">Порядок и время приема</a>
+                  </li>
+                  <li>
+                    <a href="#">Графики приема</a>
+                  </li>
+                  <li>
+                    <a href="#">Интернет-приемная</a>
+                  </li>
+                  <li>
+                    <a href="#">Обзоры обращений граждан</a>
+                  </li>
+                  <li>
+                    <a href="#">Общественные приемные главы администрации МО «Город Киров»</a></li>
+                </ul>
+
+                <h4 class="nav-title">
+                  <a href="#">Общественная безопасность</a>
+                </h4>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="nav-column">
+                <h4 class="nav-title">
+                  <a href="#">Пресс-центр</a>
+                </h4>
+                <ul class="nav-list">
+                  <li>
+                    <a href="#">Новости</a>
+                  </li>
+                  <li>
+                    <a href="#">Анонсы</a>
+                  </li>
+                  <li>
+                    <a href="#">Конкурсы СМИ</a>
+                  </li>
+                  <li>
+                    <a href="#">Учрежденные СМИ</a>
+                  </li>
+                </ul>
+                <h4 class="nav-title">
+                  <a href="#">Карта сайта</a>
+                </h4>
+                <h4 class="nav-title">
+                  <a href="#">Законодательная карта сайта</a>
+                </h4>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p>&copy; 2009-2018 Администрация города Кирова</p>
+              <p>&copy; 2009-2018 Кировская городская Дума</p>
+              <p>Адрес: 610000, Киров, ул. Воровского, 39</p>
+              <p>При публикации материалов сайта ссылка на источник обязательна</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
