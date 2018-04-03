@@ -48,6 +48,14 @@
       &:last-child {
         margin-bottom: 0;
       }
+
+      span:nth-of-type(2) {
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
     }
   }
 }
