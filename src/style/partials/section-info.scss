@@ -1,0 +1,104 @@
+.section-info {
+  background: #f5f5f5;
+  margin: 88px auto 77px;
+  padding: 56px 0 40px;
+
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 30px;
+    margin: 0 auto 54px;
+  }
+}
+
+.info-list {
+
+  .info-list-item {
+    width: 360px;
+    margin-right: 24px;
+
+    div {
+      transition: all 0.4s ease 0s;
+      background: #fff;
+      color: #000;
+      display: block;
+      margin: 24px 0 0;
+      min-height: 160px;
+      padding: 26px 24px 6px 26px;
+      position: relative;
+
+      &:hover {
+        box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
+        color: #204e9a;
+
+        opacity: 0.8;
+
+        transition: 0.3s;
+      }
+
+      img {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        height: 46px;
+        margin: 0 0 16px;
+        width: 46px;
+
+        &:hover {
+          opacity: 0.8;
+
+          transition: 0.3s;
+        }
+      }
+
+      h3,
+      a {
+        text-decoration: none;
+
+        &:hover {
+          opacity: 0.8;
+
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}
+
+.info-button-left {
+  position: absolute;
+  top: calc((100% - 30px) / 2 );
+  left: -40px;
+
+  width: 30px;
+  height: 30px;
+
+  background-image: url("../img/right-arrow.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  border: none;
+
+  cursor: pointer;
+
+  transform: rotate(180deg);
+}
+
+.info-button-right {
+  position: absolute;
+  top: calc((100% - 30px) / 2 );
+  right: -40px;
+
+  width: 30px;
+  height: 30px;
+
+  background-image: url("../img/right-arrow.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  border: none;
+
+  cursor: pointer;
+}

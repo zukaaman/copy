@@ -9,5 +9,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   //= partials/projects-slider.js
 
+  //= partials/info-slider.js
+
   //= partials/externals.js
 });
