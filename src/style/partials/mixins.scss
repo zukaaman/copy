@@ -1,0 +1,11 @@
+@mixin lg-widths {
+  @media (max-width: 992px) { @content; }
+}
+
+@mixin xl-widths {
+  @media (max-width: 1259px) { @content; }
+}
+
+@mixin news-widths {
+  @media (min-width: 1260px) { @content; }
+}

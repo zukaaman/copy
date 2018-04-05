@@ -12,6 +12,7 @@
   position: absolute;
   top: calc((100% - 30px) / 2 );
   left: -40px;
+  z-index: 10;
 
   width: 30px;
   height: 30px;
@@ -25,12 +26,17 @@
   cursor: pointer;
 
   transform: rotate(180deg);
+
+  @include xl-widths {
+    left: 0;
+  }
 }
 
 .externals-button-right {
   position: absolute;
   top: calc((100% - 30px) / 2 );
   right: -40px;
+  z-index: 10;
 
   width: 30px;
   height: 30px;
@@ -42,4 +48,8 @@
   border: none;
 
   cursor: pointer;
+
+  @include xl-widths {
+    right: 0;
+  }
 }

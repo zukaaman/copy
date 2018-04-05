@@ -34,6 +34,10 @@ header {
     display: flex;
     align-items: center;
 
+    @include xl-widths {
+      display: none;
+    }
+
     .weathet-title {
       border-right: 1px solid #fff;
       margin-right: 14px;
@@ -164,7 +168,12 @@ header {
 
 .header-bottom {
 
+  @include xl-widths {
+    display: none;
+  }
+
   .active-menu {
+
     svg {
       width: 20px;
 
@@ -182,10 +191,14 @@ header {
 
     & > li:hover > a {
       background: #00235c;
+
+      transition: 0.3s;
     }
 
     & > li:hover > ul {
       display: block;
+
+      transition: 0.3s;
     }
 
     & > li:first-child {
@@ -207,10 +220,41 @@ header {
 
     ul {
       position: absolute;
-      top: 0;
+      top: 49px;
       left: 0;
+      z-index: 10;
 
+      margin: 0;
+      padding: 0;
       display: none;
+
+      background-color: white;
+
+      list-style: none;
+
+      li {
+        border-top: 1px solid #e7e7e7;
+        display: block;
+        margin-right: 0;
+      }
+
+      a {
+        color: #204e9a;
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: normal;
+        padding: 5px 10px;
+        text-align: left;
+
+        &:hover {
+          background: #00235c;
+          color: #ffffff;
+
+          opacity: 0.8;
+
+          transition: 0.3s;
+        }
+      }
     }
 
     li {
@@ -223,6 +267,19 @@ header {
       }
     }
   }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  width: 100%;
+  height: 50px;
+
+  background-color: #204e9a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .header-tag {

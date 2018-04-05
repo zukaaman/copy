@@ -51,6 +51,10 @@ a:hover {
   margin: 0 auto;
   min-width: 260px;
   padding: 0;
+
+  @include xl-widths {
+    padding: 0 20px;
+  }
 }
 
 

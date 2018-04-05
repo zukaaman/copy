@@ -49,5 +49,9 @@ footer {
   p {
     font-size: 12px;
     line-height: 18px;
+
+    @include xl-widths {
+      text-align: center;
+    }
   }
 }
