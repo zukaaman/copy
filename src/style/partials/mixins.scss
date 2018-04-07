@@ -1,3 +1,7 @@
+@mixin md-widths {
+  @media (max-width: 768px) { @content; }
+}
+
 @mixin lg-widths {
   @media (max-width: 992px) { @content; }
 }
